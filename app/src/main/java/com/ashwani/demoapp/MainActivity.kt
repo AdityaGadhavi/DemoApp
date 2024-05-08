@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var postViewModelFactory: PostViewModelFactory
     private lateinit var postViewModel: PostViewModel
     lateinit var recyclerView: RecyclerView
-    lateinit var img_search: ImageView
+    lateinit var imgSearch: ImageView
     lateinit var toolbar: RelativeLayout
     lateinit var et_text: EditText
     private lateinit var itemAdapter: ItemAdapter
@@ -36,11 +36,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         recyclerView = findViewById(R.id.recyclerV)
-        img_search = findViewById(R.id.img_search)
+        imgSearch = findViewById(R.id.img_search)
         et_text = findViewById(R.id.et_text)
         toolbar = findViewById(R.id.toolbar)
 
-        img_search.setOnClickListener(object : View.OnClickListener {
+        imgSearch.setOnClickListener(object : View.OnClickListener {
             override fun onClick(view: View?) {
                 // Do some work here
                 et_text.visibility = View.VISIBLE
